@@ -1,0 +1,46 @@
+.main-text{
+    position: relative;
+    text-align: center;
+    margin-top: 120px;
+    z-index: 1;
+}
+
+.big-text{
+    position: relative;
+    z-index: 1;
+    font-size: clamp(70px, 13vw, 300px);
+    font-weight: bold;
+    color: black;
+}
+
+.small-text{
+    position: absolute;
+    top: 40%; 
+    left: 1%;
+    transform: translateX(-50%); 
+    font-size: clamp(1px, 2vw, 20px);
+    font-weight: bold;
+    color: black;
+    z-index: 2;
+    background-color: white;
+    padding: clamp(1px, 0.7vw, 6px) clamp(6px, 1.5vw, 12px);
+    cursor: pointer;
+    border: none;
+    border-radius: 20%;
+    white-space: nowrap;
+}
+
+.paragraph{
+    margin-top: -10px;
+    font-size: clamp(10px, 2vw, 25px);
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+
+

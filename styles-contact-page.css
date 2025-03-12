@@ -1,0 +1,203 @@
+h2{
+    text-align: center;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-between;  /* Centrează pe orizontală */
+    align-items: center;      /* Centrează pe verticală */
+    min-height: 30vh;         /* Ajustează înălțimea */
+    width: 60%;
+    background: hsl(34, 26%, 83%);         /* Gri */
+    border-radius: 10px;
+    margin: auto;             /* Asigură centrare */
+    padding: 20px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+   
+}
+
+.contact-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 20%;
+    margin-left: 10%;
+    text-align: center;
+    gap: 15px;
+}
+
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; 
+}
+
+.info-box i {
+    font-size: 22px;
+    margin-right: 5px; 
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.info-box div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 3px; 
+    
+    
+}
+
+.contact-container .contact-form h3{
+      margin-left: -18%;
+}
+
+.info-box h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0; /* Elimină spațiul implicit */
+}
+
+.info-box p {
+    font-size: 16px;
+    margin: 0; /* Elimină spațiul implicit */
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    gap: 2px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 300%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 30%;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+    
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-bottom: 2px solid #ff7f50;
+    outline: none;
+}
+
+.contact-form input{
+   height: 20px;
+}
+
+.contact-form textarea {
+    
+    height: 60px;
+}
+
+.contact-form button{
+    background: #ed852a;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 5px;
+    padding: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+    background: #0b0401; /* Schimbare la hover */
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(255, 87, 34, 0.3);
+}
+
+@media (max-width: 1140px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column; /* Pune elementele unul sub altul */
+        align-items: center; /* Centrează pe mijloc */
+        width: 80%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .info-box{
+        flex-direction: column; /* Pune elementele unul sub altul */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: clamp(12px, 5vw, 18px);
+        
+    }
+
+    .info-box div{
+        text-align: center;
+    }
+
+    .info-box p{
+        font-size: clamp(13px,5vw,19px);
+    }
+
+    .contact-info {
+        width: 100%; /* Ocupă toată lățimea */
+        text-align: center;
+        margin-bottom: 20px; /* Spațiere între info și formular */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    .contact-form {
+        width: 100%; /* Ocupă toată lățimea */
+        max-width: 700px;
+        padding: 10px;
+        margin-left: 20%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%; /* Asigură-te că inputurile sunt la dimensiune maximă */
+        max-width: 450px;
+        height: 50px;
+        padding: 12px;
+        font-size: 14px;
+        
+    }
+
+    .contact-form textarea {
+        height: 120px; /* Mai mult spațiu pentru mesaj */
+    }
+
+    .contact-form button {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px;
+        margin-right: 28%;
+        
+    }
+}
+
+
+    
+
+

@@ -1,0 +1,90 @@
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: clamp(28px, 4vw, 48px); 
+    font-weight: bold;
+    text-align: center;
+    color: #222; 
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeIn 1.4s ease-out forwards;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pricing-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-pic{
+    width: 55%;
+    height: 55%;
+    border-radius: 10%;
+    object-fit: cover;
+}
+
+.pricing-plan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f5f5f5;
+    box-shadow: 0px 7px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 15%;
+    width: 90%; 
+    max-width: 250px;
+    margin: 20%;
+    margin-top: 10px;
+}
+
+.card-title{
+    margin: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.card-price{
+    margin: 15px;
+}
+
+@media screen and (max-width:450px)
+{
+    .pricing-grid{
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    .pricing-plan {
+        max-width: 70%; 
+        min-height: 150px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width:768px) and (min-width: 450px)
+{
+    .pricing-grid{
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .pricing-plan {
+        max-width: 70%; 
+        min-height: 150px;
+        
+    }
+}
